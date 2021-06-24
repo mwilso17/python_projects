@@ -8,10 +8,11 @@ import math
 kelvin_temp = 301
 
 # Converts the Kelvin temp to Celsius.
-celsius_temp = kelvin_temp - 273.15
+celsius_temp = round(kelvin_temp - 273.15)
 
 # Converts the Celsius temp to Fahrenheit.
-fahrenheit_temp = celsius_temp * (1.8) + 32
+fahrenheit_temp = math.floor(celsius_temp * (1.8) + 32)
 
 # Display results
-print(fahrenheit_temp)
+print(f"{kelvin_temp} in Kelvin is {fahrenheit_temp} in Fahrenheit.")
+print(f"{kelvin_temp} in Kelvin is {celsius_temp} in Celsius.")
