@@ -4,7 +4,7 @@
 
 import math
 
-# Definies the temp in Kelvin using an integer.
+# Definies the temp in Kelvin using an integer. Integer can be changed
 kelvin_temp = 301
 
 # Converts the Kelvin temp to Celsius.
