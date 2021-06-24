@@ -7,3 +7,9 @@ kelvin_temp = 301
 
 # Converts the Kelvin temp to Celsius.
 celsius_temp = kelvin_temp - 273.15
+
+# Converts the Celsius temp to Fahrenheit.
+fahrenheit_temp = celsius_temp * (1.8) + 32
+
+# Display results
+print(fahrenheit_temp)
