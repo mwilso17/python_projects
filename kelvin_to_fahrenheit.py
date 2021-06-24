@@ -2,6 +2,8 @@
 # This program converts a given temperature in Kelvin to Fahrenheit.
 # It can also be used to convert Kelvin to Celsius.
 
+import math
+
 # Definies the temp in Kelvin using an integer.
 kelvin_temp = 301
 
