@@ -4,13 +4,12 @@
 import math
 import random
 
-def get_user_choice():
+def get_user_choice(user_input):
   """Gets the user's choice"""
-  user_input = input("Please type 'rock', 'paper', or 'scissors'.: ")
-  user_choice = user_input.lower()
-  if (user_choice == 'rock') or (user_choice == 'paper') or (user_choice == 'scissors'):
-    print(f"You have selected {user_choice}.")
-    return user_choice
+  user_input = user_input.lower()
+  if (user_input == 'rock') or (user_input == 'paper') or (user_input == 'scissors'):
+    print(f"You have selected {user_input}.")
+    return user_input
   else:
     print("Please restart the program and pick either rock, paper, or scissors.")
 
@@ -52,3 +51,12 @@ def determine_winner(user_choice, computer_choice):
       return "Rock beats scissors. Computer wins!"
 
  
+def play_game():
+  prompt_user_choice = input("please choose rock, paper, or scissors: ")
+  user_choice = get_user_choice(prompt_user_choice)
+  computer_choice = get_computer_choice()
+  print(user_choice)
+  print(computer_choice)
+  print(determine_winner(user_choice, computer_choice))
+
+
