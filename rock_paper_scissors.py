@@ -52,3 +52,6 @@ def determine_winner(user_choice, computer_choice):
       return "Rock beats scissors. Computer wins!"
 
  
+print(determine_winner('rock', 'rock'))
+print(determine_winner('scissors', 'paper'))
+print(determine_winner('rock', 'paper'))
