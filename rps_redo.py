@@ -38,3 +38,13 @@ def determine_winner(user_choice, computer_choice):
       return 'Rock crushes scissors. Computer wins.'
     else:
       return 'Scissors cuts paper. User wins.'
+
+def play_game():
+  prompt_user_choice = input("Please choose 'rock', 'paper', or 'scissors': ")
+  user_choice = get_user_choice(prompt_user_choice)
+  computer_choice = get_computer_choice()
+  print(user_choice)
+  print(computer_choice)
+  print(determine_winner(user_choice, computer_choice))
+
+play_game()
