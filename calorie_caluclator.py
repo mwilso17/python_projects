@@ -20,3 +20,10 @@ def input_calories_by_day(day):
   else:
     return 'please submit a valid day'
 
+def get_total_calories():
+  return input_calories_by_day('Monday') + input_calories_by_day('Tuesday') + input_calories_by_day('Wednesday') + input_calories_by_day('Thursday') + input_calories_by_day('Friday') + input_calories_by_day('Saturday') + input_calories_by_day('Sunday')
+
+def get_ideal_calories():
+  ideal_daily_calories = 2000
+  return ideal_daily_calories * 7
+
