@@ -4,9 +4,9 @@
 
 def input_calories_by_day(day):
   if day == 'Monday':
-    return 3500
+    return 3000
   if day == 'Tuesday':
-    return 1800
+    return 1700
   if day == 'Wednesday':
     return 1500
   if day == 'Thursday':
@@ -27,3 +27,14 @@ def get_ideal_calories():
   ideal_daily_calories = 2000
   return ideal_daily_calories * 7
 
+def calculate_health_plan():
+  actual_calories = get_total_calories()
+  ideal_calories = get_ideal_calories()
+  if actual_calories == ideal_calories:
+    print("You ate just the right amount this week.")
+  if actual_calories > ideal_calories:
+    print("You ate too much this week. Go work out!")
+  if ideal_calories > actual_calories:
+    print("You ate less than ideal. Go eat some more.")
+
+calculate_health_plan()
