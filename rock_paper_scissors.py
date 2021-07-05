@@ -18,13 +18,10 @@ def get_computer_choice():
   """Gets the computers choice of rock, paper, or scissors."""
   randomNumber = math.floor(random.uniform(0, 3))
   if randomNumber == 0:
-    print("The computer has selected rock.")
     return 'rock'
-  if randomNumber == 1:
-    print("The computer has selected paper.")
+  elif randomNumber == 1:
     return 'paper'
-  if randomNumber == 2:
-    print("The computer has selected scissors.")
+  elif randomNumber == 2:
     return 'scissors'
 
-
+print(get_computer_choice())
