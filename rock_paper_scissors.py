@@ -24,4 +24,31 @@ def get_computer_choice():
   elif randomNumber == 2:
     return 'scissors'
 
-print(get_computer_choice())
+def determine_winner(user_choice, computer_choice):
+  """Determines the winner of the match."""
+  # In case of a tie
+  if user_choice == computer_choice:
+    return "It is a tie"
+
+  # If user chooses rock
+  if user_choice == 'rock':
+    if computer_choice == 'scissors':
+      return 'Rock beats scissors. User wins!'
+    else:
+      return 'Paper beats rock. Computer wins!'
+
+  # If user chooses paper
+  if user_choice == 'paper':
+    if computer_choice == 'rock':
+      return "Paper beats rock. User wins!"
+    else:
+      return "Scissors beats paper. Computer wins!"
+
+  # If user chooses scissors
+  if user_choice == 'scissors':
+    if computer_choice == 'paper':
+      return "Scissors beats paper. User wins!"
+    else:
+      return "Rock beats scissors. Computer wins!"
+
+ 
