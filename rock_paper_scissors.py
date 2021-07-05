@@ -8,19 +8,18 @@ def get_user_choice(user_input):
   """Gets the user's choice"""
   user_input = user_input.lower()
   if (user_input == 'rock') or (user_input == 'paper') or (user_input == 'scissors'):
-    print(f"You have selected {user_input}.")
     return user_input
   else:
-    print("Please restart the program and pick either rock, paper, or scissors.")
+    return "Please enter rock, paper, or scissors"
 
 def get_computer_choice():
   """Gets the computers choice of rock, paper, or scissors."""
   randomNumber = math.floor(random.uniform(0, 3))
   if randomNumber == 0:
     return 'rock'
-  elif randomNumber == 1:
+  if randomNumber == 1:
     return 'paper'
-  elif randomNumber == 2:
+  else:
     return 'scissors'
 
 def determine_winner(user_choice, computer_choice):
@@ -60,3 +59,4 @@ def play_game():
   print(determine_winner(user_choice, computer_choice))
 
 
+play_game()
