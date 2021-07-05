@@ -38,4 +38,3 @@ def determine_winner(user_choice, computer_choice):
       return 'Rock crushes scissors. Computer wins.'
     else:
       return 'Scissors cuts paper. User wins.'
-
