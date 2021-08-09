@@ -1,11 +1,28 @@
 # Mike Wilson 9 August 2021
-# This file contains the inventory list for the kiost mini app
-# inventory is stored in format: 'item name': [barcode, type, price]
-# 'type' is used for purposes of calculating tax.
+# This file contains the inventory list for the kiosk mini app
+# inventory is stored in format: 'item name': price
+
 
 inventory = {
-  'apple': [1, 'food', 0.59],
-  'soda': [2, 'food', 1.19],
-  'magazine': [3, 'finished product', 6.39],
-  'beer': [4, 'alcohol', 2.19],
+  'apple': 0.59,
+  'soda': 1.19,
+  'magazine': 6.39,
+  'beer': 2.19,
 }
+
+def calculate_subtotal():
+  subtotal = []
+  active = True
+  for item, value in inventory.items():
+    while active:
+      message = input('Enter your next item (q to stop adding items): ')
+
+      if message == 'q':
+        active = False
+      else:
+        print(f'Adding your {item} to the cart.')
+        subtotal.append(value)
+
+  print(subtotal)
+
+calculate_subtotal()
