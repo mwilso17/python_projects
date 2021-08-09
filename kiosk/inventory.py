@@ -13,15 +13,18 @@ inventory = {
 def calculate_subtotal():
   subtotal = []
   active = True
-  for item, value in inventory.items():
+  for item, price in inventory.items():
     while active:
       message = input('Enter your next item (q to stop adding items): ')
 
       if message == 'q':
         active = False
+      elif message != item:
+        print('Please try again with an item we have in stock')
+        message
       else:
         print(f'Adding your {item} to the cart.')
-        subtotal.append(value)
+        subtotal.append(price)
 
   print(subtotal)
 
