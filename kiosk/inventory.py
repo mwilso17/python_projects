@@ -22,9 +22,11 @@ def calculate_subtotal():
       elif cart != item:
         print('Please try again with an item we have in stock')
         cart
-      else:
+      elif cart == item:
         print(f'Adding your {item} to the cart.')
         subtotal.append(price)
 
-  print(subtotal)
+  Sum = sum(subtotal)
+  print(Sum)
 
+calculate_subtotal()
