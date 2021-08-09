@@ -3,3 +3,5 @@
 
 import inventory
 import calculators
+
+inventory.calculate_subtotal()
