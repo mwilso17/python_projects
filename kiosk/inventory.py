@@ -10,26 +10,32 @@ inventory = {
   'beer': 2.19,
 }
 
+subtotal = []
+basket = []
+
 def calculate_subtotal():
-  subtotal = []
   active = True
-  for item, price in inventory.items():
-    while active:
-      cart = input('Enter your next item (q to stop, i for inventory): ')
+  while active:
+    user_input = input('Enter your next item (q to stop, i for inventory): ')
 
-      if cart == 'q':
-        active = False
-      elif cart == 'i':
-        print(inventory)
-        cart
-      elif cart != item:
-        print('Please try again with an item we have in stock')
-        cart
-      elif cart == item:
-        print(f'Adding your {item} to the cart.')
-        subtotal.append(price)
+    if user_input == 'q':
+      active = False
+    elif user_input == 'i':
+      print(inventory)
+      user_input
+    elif user_input not in inventory:
+      print('Please try again with an item we have in stock')
+      user_input
+    elif user_input in inventory:
+      print(f'Adding that to the cart.')
+      basket.append(user_input)
 
-  Sum = sum(subtotal)
-  print(Sum)
+  print('Your cart contains: ', basket)
+
+  for items in basket:
+    subtotal.append(inventory[items])
+  amount_to_pay = sum(subtotal)
+
+  print(f"Your total is: $", amount_to_pay)
 
 calculate_subtotal()
