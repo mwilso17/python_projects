@@ -8,34 +8,15 @@ inventory = {
   'soda': 1.19,
   'magazine': 6.39,
   'beer': 2.19,
+  'banana': 0.79,
+  'sandwich': 3.19,
+  'candy': 1.29,
+  'peanuts': 2,
+  'pizza slice': 3.09,
+  'water': 0.89,
+  'lottery ticket': 1,
 }
 
 subtotal = []
 basket = []
 
-def calculate_subtotal():
-  active = True
-  while active:
-    user_input = input('Enter your next item (q to stop, i for inventory): ')
-
-    if user_input == 'q':
-      active = False
-    elif user_input == 'i':
-      print(inventory)
-      user_input
-    elif user_input not in inventory:
-      print('Please try again with an item we have in stock')
-      user_input
-    elif user_input in inventory:
-      print(f'Adding your {user_input} to the cart.')
-      basket.append(user_input)
-
-  print('Your cart contains: ', basket)
-
-  for items in basket:
-    subtotal.append(inventory[items])
-  amount_to_pay = sum(subtotal)
-
-  print(f"Your total is: $", amount_to_pay)
-
-calculate_subtotal()
