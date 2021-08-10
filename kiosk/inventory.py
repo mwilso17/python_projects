@@ -27,7 +27,7 @@ def calculate_subtotal():
       print('Please try again with an item we have in stock')
       user_input
     elif user_input in inventory:
-      print(f'Adding that to the cart.')
+      print(f'Adding your {user_input} to the cart.')
       basket.append(user_input)
 
   print('Your cart contains: ', basket)
