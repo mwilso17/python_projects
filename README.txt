@@ -6,5 +6,5 @@ My favorite projects in here are currently:
 
 Descriptive table of contents:
 1) archive: This folder contains past projects that are not currently assigned to other folders.
-2) Kiosk: (in progress) this folder contains the files for a kiosk app. Main.py is used to run the code and allow users to input their purchases and calculates their subtotal, tax, and total after tax.
+2) Kiosk: this folder contains the files for a kiosk app. Main.py is used to run the code and allow users to input their purchases and calculates their subtotal, tax, and total after tax.
 3) book_buddy: This program is a mini app that analyzes a .txt file and accepts user input to determine how long it will take to read the .txt file based on their inputs.
