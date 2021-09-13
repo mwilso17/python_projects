@@ -12,23 +12,30 @@ def question_npc():
     if questions_asked == 0:
       print("Welcome traveler! Stay in our small village as long as you want.")
       questions_asked = questions_asked + 1
+      print(questions_asked)
       break
 
-    if questions_asked == 1:
+    elif questions_asked == 1:
       print("You should probably talk to the village elder.")
       questions_asked = questions_asked + 1
+      print(questions_asked)
       break
+
 
     if questions_asked == 2:
       print("You can have this. The baker gave me an extra one today.")
       player_inventory.append('sweet roll')
       questions_asked = questions_asked + 1
+      print(questions_asked)
       break
+
 
     if questions_asked == 3:
       print("Take care, traveler.")
+      print(questions_asked)
       break
 
 print(player_inventory)
+question_npc()
 question_npc()
 print(player_inventory)
