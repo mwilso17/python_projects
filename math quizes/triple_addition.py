@@ -16,7 +16,7 @@ for questionNumber in range(questions):
   num2 = random.randint(0, 20)
   num3 = random.randint(0, 20)
 
-  prompt = '#%s: %s + %s + %s = ' % (questions, num1, num2, num3)
+  prompt = '#%s: %s + %s + %s = ' % (questionNumber, num1, num2, num3)
 
   try:
     pyip.inputStr(prompt, allowRegexes=['^%s$' % (num1 + num2 + num3)],
