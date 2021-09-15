@@ -30,4 +30,4 @@ for questionNumber in range(questions):
     print('Great job!')
     correctAnswers += 1
   time.sleep(1) # Gives users 1 second to view answer before next question pops up
-print('Score: %s / %s' % (correctAnswers / questions))
+print('Score: %s / %s' % (correctAnswers, questions))
