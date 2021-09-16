@@ -43,3 +43,6 @@ minor_arcana = ['The 1 of Cups', 'The 2 of Cups', 'The 3 of Cups',
   'The 4 of Swords', 'The 5 of Swords', 'The 6 of Swords', 'The 7 of Swords',
   'The 8 of Swords', 'The 9 of Swords', 'The 10 of Swords', 'The Page of Swords',
   'The Queen of Swords', 'The King of Swords', 'The Knight of Swords']
+
+print(len(major_arcana))
+print(len(minor_arcana))
