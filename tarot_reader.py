@@ -1,7 +1,7 @@
 # Mike Wilson 15 September 2021
 # This program uses random in order to read tarot cards to a user.
 # Definitions of each card will be stored in a seperate README.txt file.
-import random
+import random, time
 
 # Lists to stor major and minor arcana.
 major_arcana = ['The Fool',
@@ -44,5 +44,35 @@ minor_arcana = ['The 1 of Cups', 'The 2 of Cups', 'The 3 of Cups',
   'The 8 of Swords', 'The 9 of Swords', 'The 10 of Swords', 'The Page of Swords',
   'The Queen of Swords', 'The King of Swords', 'The Knight of Swords']
 
-print(len(major_arcana))
-print(len(minor_arcana))
+
+# Function to get Shiva's Trident (3 Major arcana for past present and future,
+# 2 Minor arcana for strengths and weaknesses)
+def shivas_trident():
+  past = major_arcana[random.randint(0, len(major_arcana) - 1)]
+  major_arcana.remove(past)
+  present = major_arcana[random.randint(0, len(major_arcana) - 1)]
+  major_arcana.remove(present)
+  future = major_arcana[random.randint(0, len(major_arcana) - 1)]
+  major_arcana.remove(future)
+  strength = minor_arcana[random.randint(0, len(minor_arcana) - 1)]
+  minor_arcana.remove(strength)
+  weakness = minor_arcana[random.randint(0, len(minor_arcana) - 1)]
+  minor_arcana.remove(weakness)
+
+  print('Think deeply of your question. Your cards will be read in 5 seconds.')
+  time.sleep(6)
+
+  print('Your Past: ' + past)
+  time.sleep(3)
+  print('Your Present: ' + present)
+  time.sleep(3)
+  print('Your Future: ' + future)
+  time.sleep(3)
+  print('Your Strength: ' + strength)
+  time.sleep(3)
+  print('Your Weakness: ' + weakness)
+  time.sleep(3)
+  
+  print('Reflect on this reading and yourself. Go in peace. So mote it be.')
+
+shivas_trident()
