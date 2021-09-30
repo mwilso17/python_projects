@@ -77,10 +77,14 @@ def shivas_trident():
 
 
 def three_card_spread():
-  deck = [major_arcana + minor_arcana]
+  deck = (major_arcana + minor_arcana)
   past = deck[random.randint(0, len(deck) - 1)]
-  deck.remove(past)
+  present = deck[random.randint(0, len(deck) - 1)]
+  future = deck[random.randint(0, len(deck) - 1)]
+
   print(past)
+  print(present)
+  print(future)
 
 
 
