@@ -75,4 +75,15 @@ def shivas_trident():
   
   print('Reflect on this reading and yourself. Go in peace. So mote it be.')
 
-shivas_trident()
+
+def three_card_spread():
+  deck = [major_arcana + minor_arcana]
+  past = deck[random.randomint(0, len(deck) - 1)]
+  deck.remove(past)
+  print(past)
+
+
+
+# Comment out all but whichever spread you want to use.
+# shivas_trident()
+three_card_spread()
