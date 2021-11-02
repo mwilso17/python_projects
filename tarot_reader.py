@@ -91,3 +91,5 @@ def three_card_spread():
 # Comment out all but whichever spread you want to use.
 # shivas_trident()
 three_card_spread()
+
+# Test to make sure GitHub is still connected
