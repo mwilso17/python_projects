@@ -6,6 +6,7 @@ import json
 data = json.load(open("applications\data.json"))
 
 def translate(word):
+  word = word.lower()
   if word in data:
     return data[word]
   else:
