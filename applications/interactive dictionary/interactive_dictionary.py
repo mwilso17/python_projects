@@ -4,7 +4,7 @@
 # application properly.
 import json
 from difflib import get_close_matches
-data = json.load(open("applications\data.json"))
+data = json.load(open("applications\interactive dictionary\data.json"))
 
 def translate(word):
   word = word.lower()
