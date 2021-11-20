@@ -5,7 +5,8 @@
 # As the program is currently set with host_temp, it will write contents in the websites list to the file path
 # applications\website_blocker\hosts during the hours of 5am and 7am and erase them outside of those hours. 
 # Repacing the 2 uses of host_temp with host_path in the while loop will allow
-# for full functionality of the program. User may need to allow permissions for host_path folders.
+# for full functionality of the program. User may need to allow permissions for host_path folders by running 
+# as administrator and/or allowing permissions through installed antivirus program.
 
 import time
 from datetime import datetime as dt
