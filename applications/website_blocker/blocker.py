@@ -7,6 +7,7 @@
 # Repacing the 2 uses of host_temp with host_path in the while loop will allow
 # for full functionality of the program. User may need to allow permissions for host_path folders by running 
 # as administrator and/or allowing permissions through installed antivirus program.
+# This program is designed to be ran in the background using minimal memory.
 
 import time
 from datetime import datetime as dt
