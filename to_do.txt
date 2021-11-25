@@ -1,0 +1,17 @@
+A to do list of programs:
+
+1) reverse words in a strong
+2) RE styled item list
+3) FF parent/child class
+4) piggy bank
+5) reading speed
+6) marginal tax calculator
+7) hold em/blackjack programs
+8) interaction tree
+9)pizza restaurant
+10) discount calculator
+11) dnd character generator
+12) immunity calculator/status effect
+13) budget calculator
+14) API weather scrapper
+15) math quizzes
