@@ -7,7 +7,7 @@ A to do list of programs:
 5) reading speed
 6) marginal tax calculator
 7) hold em/blackjack programs
-8) interaction tree
+8) interaction tree - (think. if I ask so many questions, I get a prize, etc)
 9)pizza restaurant
 10) discount calculator
 11) dnd character generator
@@ -19,3 +19,6 @@ A to do list of programs:
 17) portfolio website
 18) JavaScript forms and other projects for portfolio
 19) Bootstrap samples.
+20) coin change / calcuate minimum coins needed for a certain amount
+21) pygame video game remake
+22) distinct permutations
