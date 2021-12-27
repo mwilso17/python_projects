@@ -3,14 +3,14 @@ from random_walk import Randomwalk
 
 while True:
   # Make a random walk.
-  rw = Randomwalk()
+  rw = Randomwalk(50_000)
   rw.fill_walk()
 
   # Plot points in the walk.
   plt.style.use('classic')
   fig, ax = plt.subplots()
   point_numbers = range(rw.num_points)
-  ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolors='none',s=15)
+  ax.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues, edgecolor='none',s=1)
 
   # Emphasize the first and last points.
   ax.scatter(0, 0, c='green', edgecolors='none', s=100)
