@@ -22,3 +22,4 @@ A to do list of programs:
 20) coin change / calcuate minimum coins needed for a certain amount
 21) pygame video game remake
 22) distinct permutations
+23) ncdc.noaa.gov daily summaries 
