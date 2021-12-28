@@ -23,3 +23,5 @@ A to do list of programs:
 21) pygame video game remake
 22) distinct permutations
 23) ncdc.noaa.gov daily summaries 
+24) web scrappers 
+25) API programs
